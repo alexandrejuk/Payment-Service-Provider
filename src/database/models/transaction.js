@@ -31,7 +31,24 @@ const Transaction = (sequelize) => {
       type: Sequelize.STRING,
       allowNull: false,
     },
+    payment_method: {
+      type: Sequelize.ENUM(['credit_card', 'debt_card']),
+      allowNull: false,
+    },
+    payment_date: {
+      type: Sequelize.DATE,
+      allowNull: false,
+    }
   })
+
+  Transaction.associate = (models) => {
+    models.transaction.belongsTo(models.company, {
+      foreignKey: {
+        allowNull: false,
+      }
+    })
+  }
+
   return Transaction
 }
 
