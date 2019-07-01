@@ -46,4 +46,5 @@ const payableSpec = transactionData => {
 module.exports = {
   payableSpec,
   transactionSpec,
+  getFinalNumbersCard,
 }
