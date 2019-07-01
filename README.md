@@ -13,7 +13,7 @@ Teste técnico do Pagar.me, desenvolvido com NodeJS, ExpressJS e a base de dados
 2. api/v1/companies/:companyId/transactions
 3. api/v1/companies/:companyId/balance
 
-# EndPoint Companies
+## EndPoint Companies
 
 ## Método POST 
 A api possibilita cadastrar a company(Empresa) que irá utilizar a api com o método POST, segue exemplo do **body**, desse método.
@@ -67,7 +67,7 @@ Exemplo da resposta do **endpoint** acima:
 }
 ```
 
-# EndPoint Transactions 
+## EndPoint Transactions 
 
 ## Método POST 
 A api possibilita capturar uma transação de pagamento, para a realização da captura a api utiliza o método POST. Todas as transações enviada para o endpoint **transactions ou balance**, deve conter o **companyId** no params do endpoint, segue exemplo do **body**, desse método.
@@ -120,7 +120,7 @@ Exemplo da resposta do **endpoint** acima:
 ```
 
 ## Método GET 
-A api possibilita buscar as informações das transações processadas jutamente com os seus recebíveis. Todas as transações enviada para o endpoint **transactions ou balance**, deve conter o **companyId** no params do endpoint, segue exemplo do **body**, desse método.
+A api possibilita buscar as informações das transações processadas com os seus recebíveis. Todas as transações enviada para o endpoint **transactions ou balance**, deve conter o **companyId** no params do endpoint, segue exemplo do **body**, desse método.
 
 ```
 GET http://localhost:3000/api/v1/companies/:companyId/transactions
@@ -180,7 +180,7 @@ Exemplo da resposta do **endpoint** acima:
 ```
 
 
-# EndPoint Balance 
+## EndPoint Balance 
 
 ## Método GET 
 A api possibilita buscar as informações dos recebíveis das transações processadas. Todas as transações enviada para o endpoint **transactions ou balance**, deve conter o **companyId** no params do endpoint, segue exemplo do **body**, desse método.
