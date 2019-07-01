@@ -13,7 +13,7 @@ class Company {
     }
   }
 
-  async getByid(id) {
+  async getById(id) {
     try {
       const response = await CompanyModel.findByPk(id)
       return defaultResponse(response)
