@@ -38,7 +38,7 @@ describe('Controllers: Transaction', () => {
       
       const { data } = await transationController.getAll(companyId)
       expect(data.length > 0).toBeTruthy()
-    });
+    })
   })
 
   describe('Create a transaction: create()', () => {
@@ -54,5 +54,4 @@ describe('Controllers: Transaction', () => {
       expect(data.card_holder_name).toBe(transactionMock.card_holder_name)
     })
   })
-
 })

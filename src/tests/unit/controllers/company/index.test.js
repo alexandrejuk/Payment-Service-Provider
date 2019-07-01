@@ -32,6 +32,4 @@ describe('Controllers: Transaction', () => {
       expect(companyFound.cnpj).toBe(companyCreated.cnpj)
     })
   })
-
-
 })
