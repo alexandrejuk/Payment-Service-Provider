@@ -11,7 +11,7 @@ module.exports = (app) => {
 
   app.route('/api/v1/companies/:id')
     .get(async (req, res) => {
-      const { data, statusCode } = await companyController.getByid(req.params.id)
+      const { data, statusCode } = await companyController.getById(req.params.id)
       res.status(statusCode).json(data)
     })
 }
