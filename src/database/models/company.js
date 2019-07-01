@@ -17,6 +17,14 @@ const Company = (sequelize) => {
     }
   })
 
+  Company.associate = (models) => {
+    models.company.hasMany(models.transaction, {
+      foreignKey: {
+        allowNull: false,
+      }
+    })
+  }
+
   return Company
 }
 
