@@ -1,7 +1,10 @@
 const Sequelize = require('sequelize')
 const Models = require('./models')
 
-const sequelize = new Sequelize('postgres', 'postgres', 'postgres', {
+const sequelize = new Sequelize({
+  username:'postgres',
+  password: 'postgres',
+  database: 'postgres',
   host: 'localhost',
   dialect: 'postgres',
   logging: false,
@@ -13,5 +16,13 @@ const sequelize = new Sequelize('postgres', 'postgres', 'postgres', {
   },
 })
 
-Models.map(model => model(sequelize))
+const ModelInstances = Models.map(model => model(sequelize))
+
+ModelInstances
+  .forEach(
+    modelInstance => 
+      modelInstance.associate && 
+      modelInstance.associate(sequelize.models)
+  )
+
 module.exports = sequelize
