@@ -25,5 +25,9 @@
     "eslint-plugin-jest": "^22.7.1",
     "jest": "^24.8.0",
     "nodemon": "^1.19.1"
+  },
+  "author": {
+    "name": "Alexandre S. Soares",
+    "email": "ale_santos.soares@hotmail.com"
   }
 }
