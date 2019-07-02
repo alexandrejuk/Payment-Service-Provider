@@ -5,8 +5,19 @@ Teste técnico do Pagar.me, desenvolvido com NodeJS, ExpressJS e a base de dados
 * Docker
 * Docker-Compose
 * NodeJS
+* yarn 
 
 ## Como usar
+
+1. clone o repositório: git@github.com:alexandrejuk/Payment-Service-Provider.git
+2. cd Payment-Service-Provider
+3. yarn install
+4. docker-compose up -d (para iniciar o banco de dados)
+5. yarn migrate (para criar as tabelas)
+6. yarn test (para executar os testes)
+7. yarn start (para iniciar a aplicação)
+
+**caso o você não tenha o yarn instalado globamente na sua máquina o passo número 5 terá que ser executado manualmente acessando o sequelize de dentro do node_modules.
 
 ## Endpoint da API
 1. api/v1/companies
