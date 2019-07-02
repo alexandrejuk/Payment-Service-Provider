@@ -22,7 +22,7 @@ const transactionMock = {
   payment_date: 'Fri Jun 28 2019 15:43:37 GMT-0300 (Brasilia Standard Time)',
 }
 
-describe('Routes: Transaction', () => {
+describe('Routes: Transactions', () => {
 
   let url = null
 
