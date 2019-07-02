@@ -1,4 +1,4 @@
-# Test Backend Pagar.me
+# Teste Backend Pagar.me
 Teste técnico do Pagar.me, desenvolvido com NodeJS, ExpressJS e a base de dados, feita com PostgresSQL, usando Sequelize para o ORM.
 
 # Requerido
